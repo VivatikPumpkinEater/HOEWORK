@@ -3,7 +3,7 @@ package hw5;
 import java.util.Comparator;
 import java.util.Map;
 
-class ValueComparator implements Comparator<String> {
+class ValueComparator implements Comparator<String>{
     Map<String, Integer> base;
 
     public ValueComparator(Map<String, Integer> base) {

@@ -7,7 +7,7 @@ import java.io.ObjectOutputStream;
 public class WriteMain {
 
     public static void main(String[] args) throws IOException {
-        int counter = 10;
+        int counter = 100000;
         ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("text7.txt"));
 
         Object student;

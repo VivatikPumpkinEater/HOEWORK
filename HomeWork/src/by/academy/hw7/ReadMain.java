@@ -6,13 +6,13 @@ import java.util.List;
 
 public class ReadMain {
     String line;
-    List<Students> mass = new ArrayList<>();
+    List<Students> list = new ArrayList<>();
 
     public static void main(String[] args) throws IOException {
         ReadMain test = new ReadMain();
         test.reader();
-        for (Students newStudents : test.mass)
-            System.out.println(newStudents.key);
+        for (Students newStudents : test.list)
+            System.out.println(newStudents.wh);
     }
 
     public void reader() {
@@ -21,8 +21,8 @@ public class ReadMain {
             readFromFile = new BufferedReader(new FileReader("text7.txt"));
             while ((line = readFromFile.readLine()) != null) {
                 Students newStudents = new Students();
-                newStudents.key = line;
-                mass.add(newStudents);
+                newStudents.wh = line;
+                list.add(newStudents);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -38,6 +38,6 @@ public class ReadMain {
     }
 
     public static class Students {
-        public String key;
+        public String wh;
     }
 }
